@@ -1,9 +1,9 @@
-# Wikipedia Users
+# Wikipedia Users: web analytics
 
 📚 👀 Quick look into behavioral characteristics and usage metrics of Wikipedia users based on event logging (EL) data using Python stack (scikit-learn k-means, seaborn, pandas, numpy and scipy stats) 💻
 
 
-A lot of companies rely on event logging (EL) to track a variety of performance and usage metrics to help us make decisions. In this analysis I dove into one week of Wikipedia users' data to answer the following questions:
+A lot of companies rely on event logging (EL) to track a variety of performance and usage metrics to help make decisions. In this analysis I dove into one week of Wikipedia users' data to answer the following questions:
 
 **1. What is Wikipedia daily overall clickthrough rate<sup>1</sup>? How does it vary between the groups A and B?**
 
