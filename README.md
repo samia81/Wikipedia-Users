@@ -11,7 +11,7 @@ A lot of companies rely on event logging (EL) to track a variety of performance 
 
 ![CRT](CRT.png)
 
-<sup>1</sup>clickthrough rate: the proportion of search sessions where the user clicked on one of the results displayed such that 
+<sup>1</sup>clickthrough rate: the proportion of search sessions where the user clicked on one of the results displayed.
 
 **2. What is Wikipedia's daily overall zero results rate<sup>2</sup>? How does it vary between the groups?**
 
@@ -34,7 +34,15 @@ When we plot the centroids on top of a scatter plot of last action duration and 
 
 ![scatter_cluster_centroids](scatter_cluster_centroids.png)
 
-The first user, who just wants to quickly check some facts, would have the session lenght pretty much limited to one site, to which he arrives after a quick search. The second user, who wants to spend more time and explore the related articles, would do some jumping between the articles and finally spend most of their time on the very last one. 
+The first user (cluster on the left), who perhaps just wants to quickly check some facts, would have the session lenght pretty much limited to one site, to which s/he arrives after a quick search. The second user (cluster on the right), who wants to spend more time and explore the related articles, would do some jumping between the articles and finally spend most of their time on the very last one. 
+
+This is evidenced by a linear relationship between the session length (y axis) and the duration of the last action (su) and a high correlation (r = .63), which means that users tend to spend most time of their session on the very last website. There are a number of implications for the user interface, such as:
+
+1. So, we have users that already spend a lot of time on Wikipedia (cluster 2). How can we incentivise users from the first cluster to spend more time on Wikipedia? Can we engage them better with the content? 
+
+2. If the users need to find what they are looking for fast and are not willing to spend more time on the website, how can we make their search faster, thus making it more likely they will come back?
+
+These are just example questions which require further investigations and collaboration with the UX team. An example follow-up experiment would involve either running an in-depth study with users on-site or running a large group of participants online. 
 
 
 
