@@ -36,7 +36,7 @@ When we plot the centroids on top of a scatter plot of last action duration and 
 
 The first user (cluster on the left), who perhaps just wants to quickly check some facts, would have the session lenght pretty much limited to one site, to which s/he arrives after a quick search. The second user (cluster on the right), who wants to spend more time and explore the related articles, would do some jumping between the articles and finally spend most of their time on the very last one. 
 
-This is evidenced by a linear relationship between the session length (y axis) and the duration of the last action (su) and a high correlation (r = .63), which means that users tend to spend most time of their session on the very last website. There are a number of implications for the user interface, such as:
+This is evidenced by a linear relationship between the session length (y axis) and the duration of the last action (x axis) and a high correlation (r = .63), which means that users tend to spend most time of their session on the very last website. There are a number of implications for the user interface, such as:
 
 1. So, we have users that already spend a lot of time on Wikipedia (cluster 2). How can we incentivise users from the first cluster to spend more time on Wikipedia? Can we engage them better with the content? 
 
