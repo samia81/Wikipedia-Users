@@ -11,7 +11,7 @@ A lot of companies rely on event logging (EL) to track a variety of performance 
 
 ![CRT](CRT.png)
 
-<sup>1</sup>clickthrough rate: the proportion of search sessions where the user clicked on one of the results displayed. **Side comment:** mind that CTR is simply a statistic showing that users clicked at a particular link while it tells us *nothing* about their motives (they might have clicked because they were intrigued) or the end result of clicking on the link (e.g. whether they purchased a product in case of a marketplace website or actually read the article in case of Wikipedia)
+<sup>1</sup>clickthrough rate: the proportion of search sessions where the user clicked on one of the results displayed. **Side comment:** mind that CTR is simply a statistic showing that users clicked at a particular link while it tells us *nothing* about their motives (they might have clicked because they were intrigued) or the end result of clicking on the link (e.g. whether they purchased a product in case of a marketplace website or actually read the article in case of Wikipedia). If you wanna read more, check out this Edwin Chen's post on Quora: https://www.quora.com/How-do-you-measure-and-evaluate-the-quality-of-recommendation-engines/answer/Edwin-Chen-1.
 
 **2. What is Wikipedia's daily overall zero results rate<sup>2</sup>? How does it vary between the groups?**
 
