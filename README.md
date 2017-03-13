@@ -5,7 +5,7 @@
 
 A lot of companies rely on event logging (EL) to track a variety of performance and usage metrics to help make decisions. In this analysis I dove into one week of Wikipedia users' data to answer the following questions:
 
-**1. What is Wikipedia daily overall clickthrough rate<sup>1</sup>? How does it vary between the groups A and B?**
+## 1. What is Wikipedia daily overall clickthrough rate<sup>1</sup>? How does it vary between the groups A and B?
 
 ![equation](equation.png)
 
@@ -13,14 +13,14 @@ A lot of companies rely on event logging (EL) to track a variety of performance 
 
 <sup>1</sup>clickthrough rate: the proportion of search sessions where the user clicked on one of the results displayed. **Side comment:** mind that CTR is simply a statistic showing that users clicked at a particular link while it tells us *nothing* about their motives (they might have clicked because they were intrigued) or the end result of clicking on the link (e.g. whether they purchased a product in case of a marketplace website or actually read the article in case of Wikipedia). If you wanna read more, check out this Edwin Chen's post on Quora: https://www.quora.com/How-do-you-measure-and-evaluate-the-quality-of-recommendation-engines/answer/Edwin-Chen-1.
 
-**2. What is Wikipedia's daily overall zero results rate<sup>2</sup>? How does it vary between the groups?**
+## 2. What is Wikipedia's daily overall zero results rate<sup>2</sup>? How does it vary between the groups?
 
 ![zero_results_rate](zero_results_rate.png)
 <sup>2</sup>zero results rate: the proportion of searches that yielded 0 results
 and other metrics outside the scope of this task. EL uses JavaScript to asynchronously send messages (events) to our servers when the user has performed specific actions. In this task, you will analyze a subset of our event logs.
 
 
-**3. Let session length be approximately the time between the first event and the last event in a session. Choose a variable from the dataset and describe its relationship to session length. Visualize the relationship.**
+## 3. Let session length be approximately the time between the first event and the last event in a session. Choose a variable from the dataset and describe its relationship to session length. Visualize the relationship.
 
 I chose to investigate if there is evidence for different browsing behaviors among users. Specifically, I was intrigued by the possibility that there are various browsing styles: quick fact checking (1) and deeper dives into Wikipedia articles (2). 
 
@@ -34,7 +34,9 @@ When we plot the centroids on top of a scatter plot of last action duration and 
 
 ![scatter_cluster_centroids](scatter_cluster_centroids.png)
 
-The first user (cluster on the left), who perhaps just wants to quickly check some facts, would have the session lenght pretty much limited to one site, to which s/he arrives after a quick search. The second user (cluster on the right), who wants to spend more time and explore the related articles, would do some jumping between the articles and finally spend most of their time on the very last one. 
+
+
+**Insights:** The first user (cluster on the left), who perhaps just wants to quickly check some facts, would have the session lenght pretty much limited to one site, to which s/he arrives after a quick search. The second user (cluster on the right), who wants to spend more time and explore the related articles, would do some jumping between the articles and finally spend most of their time on the very last one. 
 
 This is evidenced by a linear relationship between the session length (y axis) and the duration of the last action (x axis) and a high correlation (r = .63), which means that users tend to spend most time of their session on the very last website. There are a number of implications for the user interface, such as:
 
