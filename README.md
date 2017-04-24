@@ -46,7 +46,7 @@ There are a number of **actionable insights** for the user interface, such as:
 
 These are just example questions which require further investigations and collaboration with the UX team. An example follow-up experiment would involve either running an in-depth study with users on-site or running a large group of participants online. 
 
-#Data
+# Data
 
 Full dataset can be accessed <a href="https://github.com/zuzannna/Discovery-Hiring-Analyst-2016">here</a>.
 
@@ -71,7 +71,7 @@ The following are possible values for an event's action field:
 - **checkin**: when the user has remained on the page for a pre-specified amount of time.
 
 
-##Example Session
+## Example Session
 
 |uuid                             |      timestamp|session_id       |group |action           | checkin|page_id          | n_results| result_position|
 |:--------------------------------|:--------------|:----------------|:-----|:----------------|-------:|:----------------|---------:|---------------:|
