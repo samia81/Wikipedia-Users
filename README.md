@@ -15,7 +15,7 @@ A lot of companies rely on event logging (EL) to track a variety of performance 
 
 ### 2. What is Wikipedia's daily overall zero results rate<sup>2</sup>? How does it vary between the groups?
 
-![zero_results_rate](zero_results_rate.png)
+![zero_results_rate](images/zero_results_rate.png)
 <sup>2</sup>zero results rate: the proportion of searches that yielded 0 results
 and other metrics outside the scope of this task. EL uses JavaScript to asynchronously send messages (events) to our servers when the user has performed specific actions. In this task, you will analyze a subset of our event logs.
 
@@ -47,6 +47,21 @@ There are a number of **actionable insights** for the user interface, such as:
 
 These are just example questions which require further investigations and collaboration with the UX team. An example follow-up experiment would involve either running an in-depth study with users on-site or running a large group of participants online. 
 
+## Requirements:
+
+1. <a href="https://www.python.org/"> Python</a> (2.7)
+2. <a href="http://jupyter.org/">Jupyter Notebook</a>
+3. <a href="http://www.numpy.org/">NumPy</a>
+4. <a href="http://www.scipy.org/">SciPy</a>
+5. <a href="http://matplotlib.org/">matplotlib</a>
+6. <a href="http://pandas.pydata.org">Pandas</a>
+7. <a href="http://scikit-learn.org/stable/">scikit learn</a>
+8. <a href="http://seaborn.pydata.org">Seaborn</a>
+
+To install all of them (except Python) using pip run:
+<pre>
+ pip install -r requirements.txt
+</pre>
 
 
 
